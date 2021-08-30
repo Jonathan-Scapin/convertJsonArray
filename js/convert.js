@@ -1,15 +1,17 @@
 const showArray = document.getElementById("showArray");
+let size = document.getElementById("nbOfArray");
 var file = document.getElementById("source");
 
 function convertArray() {
 
   data = file.value;
+  size = size.value;
 
   var arrayOfArrays = [];
 
   const splitData = data.split("," + " ");
 
-  arrayOfArrays.push(_.chunk(splitData, 25))
+  arrayOfArrays.push(_.chunk(splitData, size))
 
   for (let index = 0; index < arrayOfArrays.length; index++) {
 

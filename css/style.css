@@ -78,8 +78,17 @@ header p a {
 
 #containBtn {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 1rem;
+}
+
+#nbOfArray{
+    border-radius: 6px;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 #btnStart {
@@ -87,6 +96,7 @@ header p a {
     color: white;
     padding: 1rem;
     border-radius: 6px;
+    text-align: center;
 }
 #btnStart:hover{
     background-color: #0469c2;
