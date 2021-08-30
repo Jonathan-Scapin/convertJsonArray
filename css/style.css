@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
 body {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -29,43 +29,16 @@ header p a {
     justify-content: space-around;
 }
 
-#fileToConvert {
-    display: flex;
-    flex-direction: column;
-}
-
-#source {
-    min-width: 500px;
-    min-height: 400px;
-    border-radius: 6px;
-}
-
-#codebox {
-    min-width: 500px;
-    max-width: 100%;
-}
-
-#codeboxHeader {
-    display: flex;
-    justify-content: space-between;
+.codeboxHeader {
     padding: 5px 5px 5px 10px;
     font-size: 1.1em;
     color: #fff;
     border-radius: 6px 6px 0px 0px;
-    background-color: #3D9970;
+    width: 600px;
 }
 
-#codeboxHeader svg{
-    width: 20px;
-    color: white;
-}
-#codeboxHeader svg:hover{
-    cursor: pointer;
-}
-
-#showArray {
+.codebox {
     padding: 15px;
-    min-height: 370px;
     font-family: Courier, sans-serif;
     font-size: 1em;
     line-height: 1.3;
@@ -74,6 +47,32 @@ header p a {
     border-radius: 0px 0px 6px 6px;
     margin-bottom: 10px;
     overflow: auto;
+    width: 600px;
+    height: 600px;
+}
+
+#fileToConvert {
+    display: flex;
+    flex-direction: column;
+}
+
+#fileToConvert label {
+    background-color: #e67e22;
+}
+
+#codeboxHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3D9970;
+}
+
+#codeboxHeader svg {
+    width: 20px;
+    color: white;
+}
+
+#codeboxHeader svg:hover {
+    cursor: pointer;
 }
 
 #containBtn {
@@ -83,7 +82,7 @@ header p a {
     margin: 0 1rem;
 }
 
-#nbOfArray{
+#nbOfArray {
     border-radius: 6px;
     width: 100%;
     padding: 1rem;
@@ -98,6 +97,26 @@ header p a {
     border-radius: 6px;
     text-align: center;
 }
-#btnStart:hover{
+
+#btnStart:hover {
     background-color: #0469c2;
+}
+
+@media screen and (max-width:700px) {
+
+    #container,
+    #fileToConvert,
+    #codebox,
+    .codeboxHeader,
+    .codebox {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1366px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
 }

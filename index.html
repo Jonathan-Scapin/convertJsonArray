@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Split an array to array of arrays">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"
@@ -23,14 +24,15 @@
     <main>
         <div id="container">
             <div id="fileToConvert">
-                <textarea name="source" id="source"></textarea>
+                <label for="source" class="codeboxHeader">Copy content of array in this area (without "["" or "]")</label>
+                <textarea name="source" id="source" class="codebox"></textarea>
             </div>
             <div id="containBtn">
                 <input type="number" name="nbOfArray" id="nbOfArray" value="25">
                 <a id="btnStart" href="#" onclick="convertArray()">Convert</a>
             </div>
             <div id="codebox">
-                <div id="codeboxHeader">
+                <div id="codeboxHeader" class="codeboxHeader">
                     <p>Array</p>
                     <svg id="copy" onclick="copyClipboard()" aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy"
                         class="svg-inline--fa fa-copy fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +42,7 @@
                         </path>
                     </svg>
                 </div>
-                <div id="showArray"></div>
+                <div id="showArray" class="codebox"></div>
             </div>
         </div>
     </main>
