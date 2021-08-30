@@ -6,6 +6,7 @@ function convertArray() {
 
   data = file.value;
   size = size.value;
+  let tableau = []
 
   var arrayOfArrays = [];
 
@@ -23,7 +24,7 @@ function convertArray() {
       if (element2 === []) {
         console.log(empty)
       }else{
-        showArray.innerHTML += `<div>[${element2}],</div>`;
+        showArray.innerHTML += `[${element2}],`;
       }
     }
   }
