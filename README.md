@@ -8,4 +8,9 @@ Personally, I need an array of arrays in order to generate each row of the map o
 
 So I quickly designed this little program that does this conversion.
 
-### demo : https://jonathan-scapin.github.io/convertJsonArray/
+
+![alt text](assets/img/screenShot.png)
+
+![alt text](assets/img/convertArrayApp.gif)
+
+### [link to app](https://jonathan-scapin.github.io/convertJsonArray/)
